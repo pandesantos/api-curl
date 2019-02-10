@@ -1,0 +1,14 @@
+{
+    "name": "santosh/client",
+    "description": "Api Request Client",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Santosh",
+            "email": "yasrpande@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "Santosh\\Client\\" : "src"
+}
