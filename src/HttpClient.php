@@ -69,12 +69,12 @@ class HttpClient
      *
      * @return mixed
      */
-    public function jsonResponse(bool $assoc = false)
+    public function getResponse(bool $assoc = false)
     {
         $responseIsXml = @simplexml_load_string($this->responsePayload);
 
         if($responseIsXml){
-            return $this->xmlToJson($assoc);
+            return $this->xmlToObject($assoc);
         }
 
         return json_decode($this->responsePayload, $assoc);
@@ -85,7 +85,7 @@ class HttpClient
      *
      * @return mixed
      */
-    public function xmlToJson(bool $assoc = false)
+    public function xmlToObject(bool $assoc = false)
     {
         $responseIsXml = @simplexml_load_string($this->responsePayload);
 

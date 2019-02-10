@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Santosh
- * Date: 2/10/2019
- * Time: 10:13 AM
- */
+
 
 namespace Santosh\Client;
 
